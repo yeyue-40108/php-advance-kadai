@@ -13,7 +13,7 @@ try {
         $order = NULL;
     }
 
-    // keywordパラメータの値が存在すれば（商品名を検索したとき）、その値を変数$keywordに代入する
+    // keywordパラメータの値が存在すれば（書籍名を検索したとき）、その値を変数$keywordに代入する
     if(isset($_GET['keyword'])) {
         $keyword = $_GET['keyword'];
     } else {
@@ -86,7 +86,7 @@ try {
                     </a>
                     <form action="read.php" method="get" class="search-form">
                         <input type="hidden" name="order" value="<?= $order ?>">
-                        <input type="text" class="search-box" placeholder="商品名で検索" name="keyword" value="<?= $keyword ?>">
+                        <input type="text" class="search-box" placeholder="書籍名で検索" name="keyword" value="<?= $keyword ?>">
                     </form>
                 </div>
                 <a href="create.php" class="btn">書籍登録</a>
